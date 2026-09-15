@@ -1,0 +1,13 @@
+/* #mowafak {
+  display: flex gap 10px;
+} */
+
+#updtae {
+  background-color: rgb(74, 74, 102);
+}
+#delete {
+  background-color: red;
+}
+#addtask {
+  background-color: green;
+}
