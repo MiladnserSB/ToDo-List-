@@ -36,20 +36,17 @@
     </div>
     <div class="container">
       <!-- Button trigger modal -->
-       <div id="center">
-      <button
-        type="button"
-        class="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-        id="addtask"
-      >
-        ADD TASK
-      </button>
-      <button class="btn btn-primary" id="updtae" type="button">Update</button>
-      <button class="btn btn-primary"  
-      id="delete" type="button">Delete</button>
-          </div>
+      <div id="center">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          id="addtask"
+        >
+          ADD TASK
+        </button>
+      </div>
 
       <!-- Modal -->
       <div
@@ -82,7 +79,7 @@
                     placeholder="Enter your Name"
                   />
                   <br />
-                  <br>
+                  <br />
                   <label for="Age">Age:</label>
                   <input
                     type="number"
@@ -92,7 +89,7 @@
                     placeholder="Enter tour Age"
                   />
                   <br />
-                  <br>
+                  <br />
                   <label for="gender">Gender:</label>
                   <select name="Gender" id="gender">
                     <option value="Male">Male</option>
@@ -119,10 +116,9 @@
     <div class="container">
       <!-- <a class="btn btn-primary" id="mowafak" href="#" role="button">Link</a> -->
       <button class="btn btn-primary" type="button">ALL</button>
-       <button class="btn btn-primary" type="button">Panding</button>
-        <button class="btn btn-primary" type="button">Improse</button>
-         <button class="btn btn-primary" type="button">Complete</button>
-      
+      <button class="btn btn-primary" type="button">Panding</button>
+      <button class="btn btn-primary" type="button">Improse</button>
+      <button class="btn btn-primary" type="button">Complete</button>
     </div>
     <div class="container">
       <table class="table table-striped">
@@ -132,26 +128,57 @@
             <th scope="col">Gender</th>
             <th scope="col">Task Title</th>
             <th scope="col">Status</th>
+            <th scope="col">Edit</th>
           </tr>
         </thead>
         <tbody class="table-group-divider">
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td></td>
+            <td></td>
+            <td>
+              <button class="btn btn-primary" type="button">status</button>
+            </td>
+            <td>
+              <button class="btn btn-primary" id="updtae" type="button">
+                Update
+              </button>
+              <button class="btn btn-primary" id="delete" type="button">
+                Delete
+              </button>
+            </td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td></td>
+            <td></td>
+            <td>
+              <button class="btn btn-primary" type="button">status</button>
+            </td>
+            <td>
+              <button class="btn btn-primary" id="updtae" type="button">
+                Update
+              </button>
+              <button class="btn btn-primary" id="delete" type="button">
+                Delete
+              </button>
+            </td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>John</td>
-            <td>Doe</td>
-            <td>@social</td>
+            <td></td>
+            <td></td>
+            <td>
+              <button class="btn btn-primary" type="button">status</button>
+            </td>
+            <td>
+              <button class="btn btn-primary" id="updtae" type="button">
+                Update
+              </button>
+              <button class="btn btn-primary" id="delete" type="button">
+                Delete
+              </button>
+            </td>
           </tr>
         </tbody>
       </table>
