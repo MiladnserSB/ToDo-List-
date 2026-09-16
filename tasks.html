@@ -67,6 +67,7 @@
                 class="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
+               
               ></button>
             </div>
             <div class="modal-body">
@@ -113,75 +114,95 @@
       </div>
       <div><br /></div>
     </div>
-    <div class="container">
+    <div class="container" >
+      <div id="containbutton">
       <!-- <a class="btn btn-primary" id="mowafak" href="#" role="button">Link</a> -->
       <button class="btn btn-primary" type="button">ALL</button>
       <button class="btn btn-primary" type="button">Panding</button>
       <button class="btn btn-primary" type="button">Improse</button>
       <button class="btn btn-primary" type="button">Complete</button>
+      </div>
     </div>
-    <div class="container">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">User Name</th>
-            <th scope="col">Gender</th>
-            <th scope="col">Task Title</th>
-            <th scope="col">Status</th>
-            <th scope="col">Edit</th>
-          </tr>
-        </thead>
-        <tbody class="table-group-divider">
-          <tr>
-            <th scope="row">1</th>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="btn btn-primary" type="button">status</button>
-            </td>
-            <td>
-              <button class="btn btn-primary" id="updtae" type="button">
-                Update
-              </button>
-              <button class="btn btn-primary" id="delete" type="button">
-                Delete
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="btn btn-primary" type="button">status</button>
-            </td>
-            <td>
-              <button class="btn btn-primary" id="updtae" type="button">
-                Update
-              </button>
-              <button class="btn btn-primary" id="delete" type="button">
-                Delete
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td></td>
-            <td></td>
-            <td>
-              <button class="btn btn-primary" type="button">status</button>
-            </td>
-            <td>
-              <button class="btn btn-primary" id="updtae" type="button">
-                Update
-              </button>
-              <button class="btn btn-primary" id="delete" type="button">
-                Delete
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="container-fluid" id="tableContainer">
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Task Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Status</th>
+        <th scope="col">Priority</th>
+        <th scope="col">Assigned Users</th>
+        <th scope="col">Due Date</th>
+        <th scope="col">Tags</th>
+        <th scope="col">Edit</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">t_001</th>
+        <td>تصميم صفحة تسجيل الدخول</td>
+        <td>إنشاء واجهة تسجيل دخول متجاوبة باستخدام Bootstrap</td>
+        <td>in_progress</td>
+        <td>high</td>
+        <td>u_001, u_002, u_003</td>
+        <td>2025-02-01</td>
+        <td>frontend, ui</td>
+        <td>
+          <button class="btn btn-primary" id="updtae" type="button">
+            Update
+          </button>
+          <button class="btn btn-primary" id="delete" type="button">
+            Delete
+          </button>
+          <button class="btn btn-primary" type="button">status</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">t_002</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+          <button class="btn btn-primary" id="updtae" type="button">
+            Update
+          </button>
+          <button class="btn btn-primary" id="delete" type="button">
+            Delete
+          </button>
+          <button class="btn btn-primary" type="button">status</button>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">t_003</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+          <button class="btn btn-primary" id="updtae" type="button">
+            Update
+          </button>
+          <button class="btn btn-primary" id="delete" type="button">
+            Delete
+          </button>
+          <button class="btn btn-primary" type="button">status</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
     </div>
     <script src="./vendors/bootstrap v5.3.0/bootstrap.bundle.js"></script>
     <script src="./js/main.js"></script>

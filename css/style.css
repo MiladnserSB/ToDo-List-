@@ -9,5 +9,14 @@
   background-color: red;
 }
 #addtask {
-  background-color: green;
+  margin-left: 500px;
+  background-color: rgb(8, 128, 8);
+  width: 200px;
+}
+#containbutton {
+  margin-left: 450px;
+}
+#tableContainer {
+  padding-left: 30px;
+  padding-right: 30px;
 }
