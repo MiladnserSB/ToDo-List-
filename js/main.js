@@ -1,7 +1,10 @@
 import { renderTableLana } from "./lib.js";
 import { getTasks } from "./task.service.js";
+import { getUsers } from "./user.service.js";
 
-const tasks = await getTasks();
-console.log(tasks);
+const users = await getUsers();
 
-renderTableLana("taskTable", tasks);
+// console.log(tasks);
+
+renderTableLana("userTable", users);
+

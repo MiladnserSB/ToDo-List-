@@ -1,7 +1,7 @@
 import { request } from "./api.js";
 
-export const getUsers = async () => {
-  return await request("users", "GET");
+export const getUsers = () => {
+  return request("users", "GET");
 };
 
 export const getUserById = (id) => {
@@ -20,6 +20,4 @@ export const deleteUser = (id) => {
   return request(`users/${id}`, "DELETE");
 };
 
-// const res = await getUsers();
-// addUser({ name: "mowafak", family: "Arida", age: 22 });
-console.log(await getUserById("409Bhr5yi-g"));
+
