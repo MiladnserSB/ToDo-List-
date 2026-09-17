@@ -42,10 +42,10 @@ export const renderTableLana = (id, data) => {
     th1.innerHTML = key;
     tr.append(th1);
   });
-  const th2 = document.createElement("th");
-  th2.setAttribute("scope", "col");
-  th2.innerHTML = "Actions";
-  tr.append(th2);
+  // const th2 = document.createElement("th");
+  // th2.setAttribute("scope", "col");
+  // th2.innerHTML = "Actions";
+  // tr.append(th2);
 
   header.append(tr);
   table.append(header);
@@ -61,38 +61,39 @@ export const renderTableLana = (id, data) => {
       trs.append(td);
     });
 
-    if (id == "taskTable") {
-      const td = document.createElement("td");
-      const deleteBtn = document.createElement("button");
-      deleteBtn.id = "deleteBtn";
-      deleteBtn.classList.add("btn", "btn-danger");
-      deleteBtn.innerHTML = "Delete";
-      const updateBtn = document.createElement("button");
-      updateBtn.id = "updateBtn";
-      updateBtn.classList.add("btn", "btn-primary", "me-1");
-      updateBtn.innerHTML = "Update";
-      const statusBtn = document.createElement("button");
-      statusBtn.id = "statusBtn";
-      statusBtn.classList.add("btn", "btn-success", "me-1");
-      statusBtn.innerHTML = "Status";
-      td.append(statusBtn);
-      td.append(updateBtn);
-      td.append(deleteBtn);
-      trs.append(td);
-    } else {
-      const td = document.createElement("td");
-      const deleteBtn = document.createElement("button");
-      deleteBtn.classList.add("btn", "btn-danger");
-      deleteBtn.id = "deleteBtn";
-      deleteBtn.innerHTML = "Delete";
-      const updateBtn = document.createElement("button");
-      updateBtn.classList.add("btn", "btn-primary", "me-1");
-      updateBtn.id = "updateBtn";
-      updateBtn.innerHTML = "Update";
-      td.append(updateBtn);
-      td.append(deleteBtn);
-      trs.append(td);
-    }
+   
+    // if (id == "taskTable") {
+    //   const td = document.createElement("td");
+    //   const deleteBtn = document.createElement("button");
+    //   deleteBtn.id = "deleteBtn";
+    //   deleteBtn.classList.add("btn", "btn-danger");
+    //   deleteBtn.innerHTML = "Delete";
+    //   const updateBtn = document.createElement("button");
+    //   updateBtn.id = "updateBtn";
+    //   updateBtn.classList.add("btn", "btn-primary", "me-1");
+    //   updateBtn.innerHTML = "Update";
+    //   const statusBtn = document.createElement("button");
+    //   statusBtn.id = "statusBtn";
+    //   statusBtn.classList.add("btn", "btn-success", "me-1");
+    //   statusBtn.innerHTML = "Status";
+    //   td.append(statusBtn);
+    //   td.append(updateBtn);
+    //   td.append(deleteBtn);
+    //   trs.append(td);
+    // } else {
+    //   const td = document.createElement("td");
+    //   const deleteBtn = document.createElement("button");
+    //   deleteBtn.classList.add("btn", "btn-danger");
+    //   deleteBtn.id = "deleteBtn";
+    //   deleteBtn.innerHTML = "Delete";
+    //   const updateBtn = document.createElement("button");
+    //   updateBtn.classList.add("btn", "btn-primary", "me-1");
+    //   updateBtn.id = "updateBtn";
+    //   updateBtn.innerHTML = "Update";
+    //   td.append(updateBtn);
+    //   td.append(deleteBtn);
+    //   trs.append(td);
+    // }
     body.append(trs);
   });
   table.append(body);

@@ -1,8 +1,22 @@
 import { renderTableLana, parseForm } from "./lib.js";
 import { addUser, deleteUser, getUsers, updateUser } from "./user.service.js";
 
+const btn = document.createElement("button");
+btn.innerHTML = 'delete';
+const actions = [
+  {
+    element: btn,
+    onClick: (id) => {
+      console.log(id)
+    }
+  }
+]
 const users = await getUsers();
-renderTableLana("userTable", users);
+for (let i in users) {
+  users[i]['actions'] = actions
+}
+console.log(users)
+renderTableLana("userTable", users, actions);
 
 const addUserBtn = document.getElementById("add-user-btn");
 addUserBtn.addEventListener("click", (e) => {
