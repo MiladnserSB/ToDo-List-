@@ -1,16 +1,7 @@
-const parsetasktable = (id, data) => {
-  const taskTable = document.getElementById(id);
-  taskTable.innerHTML = "";
+import { renderTableLana } from "./lib.js";
+import { getTasks } from "./task.service.js";
 
-  data.forEach((task, index) => {
-    const row = document.createElement("tr");
-    const taskCell = document.createElement("td");
-    taskCell.textContent = task.task;
-    row.appendChild(taskCell);
-    taskTable.appendChild(row);
-  });
-//   console.log(taskTable);
+const tasks = await getTasks();
+console.log(tasks);
 
-};
-
-
+renderTableLana("taskTable", tasks);

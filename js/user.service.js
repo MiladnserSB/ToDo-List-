@@ -1,22 +1,22 @@
 import { request } from "./api.js";
 
-const getUsers = async () => {
+export const getUsers = async () => {
   return await request("users", "GET");
 };
 
-const getUserById = (id) => {
+export const getUserById = (id) => {
   return request(`users/${id}`, "GET");
 };
 
-const addUser = (user) => {
+export const addUser = (user) => {
   return request("users", "POST", user);
 };
 
-const updateUser = (id, user) => {
+export const updateUser = (id, user) => {
   return request(`users/${id}`, "PUT", user);
 };
 
-const deleteUser = (id) => {
+export const deleteUser = (id) => {
   return request(`users/${id}`, "DELETE");
 };
 

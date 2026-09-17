@@ -1,22 +1,21 @@
 import { request } from "./api.js";
 
-const getTasks = async () => {
+export const getTasks = async () => {
   return await request("tasks", "GET");
 };
 
-const getTaskById = (id) => {
+export const getTaskById = (id) => {
   return request(`tasks/${id}`, "GET");
 };
 
-const addTask = (task) => {
+export const addTask = (task) => {
   return request("tasks", "POST", task);
 };
 
-const updateTask = (id, task) => {
+export const updateTask = (id, task) => {
   return request(`tasks/${id}`, "PUT", task);
 };
 
-const deleteTask = (id) => {
+export const deleteTask = (id) => {
   return request(`tasks/${id}`, "DELETE");
 };
-
